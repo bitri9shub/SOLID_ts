@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/04.I/interfaceSegregationGood/index.ts"],"names":[],"mappings":""}
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../src/04.I/interfaceSegregationGood/index.ts"],"names":[],"mappings":";;AAOA,MAAM,SAAS;IACJ,KAAK;QACR,OAAO,aAAa,CAAA;IACxB,CAAC;IACM,GAAG;QACN,OAAO,YAAY,CAAA;IACvB,CAAC;CACJ;AAED,MAAM,GAAG;IACE,KAAK;QACR,OAAO,aAAa,CAAA;IACxB,CAAC;CACJ;AAED,MAAM,QAAQ;IACH,GAAG;QACN,OAAO,iBAAiB,CAAA;IAC5B,CAAC;CACJ"}
