@@ -9,7 +9,7 @@ class MySQLDatabase {
 }
 
 /* ###############################
-    This section was added later 
+    This section at the end
 ############################### */
 
 // what will happen if we want to have
@@ -26,7 +26,7 @@ class MyMONGODatabase {
 }
 
 /* ###############################
-    This section was added later 
+    This section at the end
 ############################### */
 
 class CrudService {

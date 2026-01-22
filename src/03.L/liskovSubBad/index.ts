@@ -1,34 +1,40 @@
-interface Shape {
-    getArea(): number
-}
-
-class Rectangle implements Shape {
-    constructor(private width: number, private height: number) { }
+class Rectangle {
+    constructor(private width: number, private length: number) { }
 
     public setWidth(width: number): void {
         this.width = width
     }
 
-    public setHeight(height: number): void {
-        this.height = height
+    public setLength(length: number): void {
+        this.length = length
     }
 
     public getArea(): number {
-        return this.height * this.width
+        return this.width * this.length
     }
 }
 
-class Square implements Shape {
-    constructor(private side: number) { }
-
-    public setSide(side: number) {
-        this.side = side
+class Square extends Rectangle {
+    constructor(side: number) {
+        super(side, side)
     }
 
-    public getArea(): number {
-        return Math.pow(this.side, 2)
+    public setWidth(width: number): void {
+        super.setWidth(width)
+        super.setLength(width)
+    }
+
+    public setLength(length: number): void {
+        super.setWidth(length)
+        super.setLength(length)
     }
 }
 
-// we can't create rectangle and say it's a square anymore
-// const rect: Rectangle = new Square(10)
+const rect: Rectangle = new Square(10)
+rect.setWidth(20)
+
+if (rect instanceof Square) {
+    // ...
+} else {
+    // ...
+}
